@@ -5,19 +5,7 @@ import matplotlib.pyplot as plt
 import time
 from datetime import datetime, timedelta
 
-# Accéder aux secrets
-client_id = st.secrets["blizzard_api"]["client_id"]
-client_secret = st.secrets["blizzard_api"]["client_secret"]
 
-
-# Fonction pour obtenir un token d'accès
-def get_access_token():
-    token_url = "https://oauth.battle.net/token"
-    data = {
-        'grant_type': 'client_credentials',
-        'client_id': CLIENT_ID,
-        'client_secret': CLIENT_SECRET
-    }
 
     response = requests.post(token_url, data=data)
     if response.status_code == 200:
