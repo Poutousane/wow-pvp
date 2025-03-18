@@ -1,4 +1,4 @@
-stremalit
+streamlit
 requests
 pandas
 matplotlib
